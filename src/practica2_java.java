@@ -15,12 +15,26 @@ public class practica2_java {
         sumarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                int a = Integer.parseInt(textField1.getText());
+                int b = Integer.parseInt(textField1.getText());
 
+                JOptionPane.showMessageDialog(null, "La suma de los numeros es: " + (a + b));
+
+                textField1.setText("");
+                textField2.setText("");
             }
         });
         restarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+
+                int a = Integer.parseInt(textField1.getText());
+                int b = Integer.parseInt(textField1.getText());
+
+                JOptionPane.showMessageDialog(null, "La resta de los numeros es: " + (a - b));
+
+                textField1.setText("");
+                textField2.setText("");
 
             }
         });
@@ -28,15 +42,45 @@ public class practica2_java {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                int a = Integer.parseInt(textField1.getText());
+                int b = Integer.parseInt(textField1.getText());
+
+                JOptionPane.showMessageDialog(null, "La multiplicacion de los numeros es: " + (a * b));
+
+                textField1.setText("");
+                textField2.setText("");
+
             }
         });
         dividirButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                int a = Integer.parseInt(textField1.getText());
+                int b = Integer.parseInt(textField1.getText());
+
+                JOptionPane.showMessageDialog(null, "La divicion de los numeros es: " + (a / b));
+
+                textField1.setText("");
+                textField2.setText("");
+
             }
         });
         borrarButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                textField1.setText("");
+                textField2.setText("");
+
+            }
+        });
+        textField2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        textField1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
